@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.packt.cookbook</groupId>
+    <artifactId>cookbook-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>project-with-additional-resources</module>
+        <module>project-with-autoclean</module>
+        <module>project-with-clean-additional-folder</module>
+        <module>project-with-clean-disabled</module>
+        <module>project-with-dependencies</module>
+        <module>project-with-dependency-not-in-repo</module>
+        <module>project-with-deprecation</module>
+        <module>project-with-different-compiler</module>
+        <module>project-with-encoding</module>
+        <module>project-with-java-version</module>
+        <module>project-with-profile</module>
+        <module>project-with-properties</module>
+        <module>project-with-resource-filtering</module>
+        <module>project-with-resources</module>
+        <module>project-with-snapshot-dependencies</module>
+        <module>project-with-testNG</module>
+        <module>project-with-tests</module>
+        <module>project-with-tests-skipped</module>
+        <module>project-with-violations</module>
+        <module>simple-project</module>
+    </modules>
+</project>
