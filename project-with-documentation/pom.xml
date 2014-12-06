@@ -33,7 +33,7 @@
     </issueManagement>
 
     <scm>
-        <developerConnection>scm:git:https://bitbucket.org/maruhgar/apache-maven-cookbook</developerConnection>
+        <connection>scm:git:https://bitbucket.org/maruhgar/apache-maven-cookbook</connection>
         <url>https://bitbucket.org/maruhgar/apache-maven-cookbook</url>
     </scm>
 
@@ -66,6 +66,16 @@
                 </reports>
             </reportSet>
         </reportSets>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.5</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-changelog-plugin</artifactId>
+        <version>2.3</version>
       </plugin>
       <plugin>
         <groupId>org.jacoco</groupId>
