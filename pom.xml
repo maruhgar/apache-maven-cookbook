@@ -20,8 +20,10 @@
 
     <modules>
         <module>bootstrap-project</module>
+        <module>multi-module-reporting</module>
         <module>project-with-additional-resources</module>
         <module>project-with-additional-source</module>
+        <module>project-with-aggregation</module>
         <module>project-with-autoclean</module>
         <module>project-with-clean-additional-folder</module>
         <module>project-with-clean-disabled</module>
@@ -32,16 +34,20 @@
         <module>project-with-documentation</module>
         <module>project-with-encoding</module>
         <module>project-with-include-exclude</module>
+        <module>project-with-inheritance</module>
         <module>project-with-java-version</module>
         <module>project-with-profile</module>
         <module>project-with-properties</module>
         <module>project-with-resource-filtering</module>
         <module>project-with-resources</module>
+        <module>project-with-side-by-side/parent</module>
         <module>project-with-snapshot-dependencies</module>
         <module>project-with-testNG</module>
         <module>project-with-tests</module>
         <module>project-with-tests-skipped</module>
         <module>project-with-violations</module>
         <module>simple-project</module>
+        <module>simple-multi-module</module>
+        <module>two-multi-module</module>
     </modules>
 </project>
