@@ -33,6 +33,7 @@
         <module>project-with-different-compiler</module>
         <module>project-with-documentation</module>
         <module>project-with-encoding</module>
+        <module>project-with-executable-jar</module>
         <module>project-with-include-exclude</module>
         <module>project-with-inheritance</module>
         <module>project-with-java-version</module>
