@@ -34,6 +34,7 @@
         <module>project-with-documentation</module>
         <module>project-with-encoding</module>
         <module>project-with-executable-jar</module>
+        <module>project-with-executable-webapp</module>
         <module>project-with-include-exclude</module>
         <module>project-with-inheritance</module>
         <module>project-with-java-version</module>
@@ -43,12 +44,16 @@
         <module>project-with-resources</module>
         <module>project-with-side-by-side/parent</module>
         <module>project-with-snapshot-dependencies</module>
+        <module>project-with-source-attached</module>
+        <module>project-with-test-jar</module>
         <module>project-with-testNG</module>
         <module>project-with-tests</module>
         <module>project-with-tests-skipped</module>
         <module>project-with-violations</module>
+        <module>simple-pom-project</module>
         <module>simple-project</module>
         <module>simple-multi-module</module>
+        <module>simple-webapp</module>
         <module>two-multi-module</module>
     </modules>
 </project>
