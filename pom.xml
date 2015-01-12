@@ -23,7 +23,9 @@
         <module>multi-module-reporting</module>
         <module>project-with-additional-resources</module>
         <module>project-with-additional-source</module>
+        <module>project-with-ant</module>
         <module>project-with-aggregation</module>
+        <module>project-with-assembly</module>
         <module>project-with-autoclean</module>
         <module>project-with-clean-additional-folder</module>
         <module>project-with-clean-disabled</module>
@@ -33,11 +35,14 @@
         <module>project-with-different-compiler</module>
         <module>project-with-documentation</module>
         <module>project-with-encoding</module>
+        <module>project-with-enforcer</module>
+        <module>project-with-exec</module>
         <module>project-with-executable-jar</module>
         <module>project-with-executable-webapp</module>
         <module>project-with-include-exclude</module>
         <module>project-with-inheritance</module>
         <module>project-with-java-version</module>
+        <module>project-with-one-jar</module>
         <module>project-with-profile</module>
         <module>project-with-properties</module>
         <module>project-with-resource-filtering</module>
