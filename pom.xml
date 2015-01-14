@@ -27,6 +27,7 @@
         <module>project-with-aggregation</module>
         <module>project-with-assembly</module>
         <module>project-with-autoclean</module>
+        <module>project-with-build-number</module>
         <module>project-with-clean-additional-folder</module>
         <module>project-with-clean-disabled</module>
         <module>project-with-dependencies</module>
