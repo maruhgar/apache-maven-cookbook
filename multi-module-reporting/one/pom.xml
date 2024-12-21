@@ -11,9 +11,9 @@
   <name>First Child Project</name>
   <description>One of the child project to illustrate multi-module reporting</description>
   <dependencies>
-        <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
    </dependencies>
 </project>

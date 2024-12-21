@@ -11,9 +11,9 @@
   <name>Second Child Project</name>
   <description>The second module in the multi-module project to report reporting</description>
   <dependencies>
-        <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
    </dependencies>
 </project>

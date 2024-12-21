@@ -13,7 +13,6 @@ public class App
      * @return int result
      */
     public int add(int a, int b) {
-        int c;
         return a + b;
     }
 

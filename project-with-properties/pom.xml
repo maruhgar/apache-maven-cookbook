@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.packt.cookbook</groupId>
@@ -8,7 +9,9 @@
   <name>Project with properties</name>
   <url>http://maven.apache.org</url>
   <properties>
-      <junit.version>3.8.1</junit.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>8</maven.compiler.release>
+    <junit.version>4.13.2</junit.version>
   </properties>
   <dependencies>
     <dependency>
@@ -19,11 +22,11 @@
     </dependency>
   </dependencies>
   <profiles>
-      <profile>
-          <id>dev</id>
-          <activation>
-              <activeByDefault>false</activeByDefault>
-          </activation>
-      </profile>
+    <profile>
+      <id>dev</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+    </profile>
   </profiles>
 </project>
