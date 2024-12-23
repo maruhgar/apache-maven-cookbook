@@ -25,9 +25,18 @@
         <artifactId>maven-scm-plugin</artifactId>
         <version>2.1.0</version>
         <configuration>
-          <goals>install</goals>
+          <goals>package</goals>
           <goalsDirectory>test-properties</goalsDirectory>
         </configuration>
+        <!-- The below section is to run the bootstrap goal during package phase -->
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>bootstrap</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
