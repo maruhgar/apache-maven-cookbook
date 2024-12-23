@@ -13,12 +13,19 @@ jobs:
       contents: read
       packages: write
 
+    strategy:
+      matrix:
+        maven: [ '3.9.9', '4.0.0.rc-2' ]
+
+    name: Maven ${{ matrix.maven }} run
+
     steps:
     - uses: actions/checkout@v4
     - name: Set up Maven
       uses: s4u/setup-maven-action@v1.17.0
       with:
         java-version: '21'
+        maven-version: ${{ matrix.maven }}
         distribution: 'oracle'
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xmls
 
