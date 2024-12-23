@@ -1,3 +1,5 @@
+_Note: This repo is mirrored from [bitbucket](https://bitbucket.org/maruhgar/apache-maven-cookbook) which is the original repo location._
+
 # About
 
 This needs to be used in conjunction with the book [Apache Maven Cookbook](https://www.amazon.in/Apache-Maven-Cookbook-Raghuram-Bharathan/dp/1785286129).
@@ -6,7 +8,7 @@ The source is organized in a number of folders corresponding to a specific use c
 
 All the examples are working examples.
 
-Coinciding with the tenth anniversary of the publication of the book, I have updated all the dependencies to the latest available as of that.  
+Coinciding with the tenth anniversary of the publication of the book, I have updated all the dependencies to the latest available as of date.  
 
 I have also ensured that the project works with the latest `3.x` version (`3.9.9`) as of date. 
 
