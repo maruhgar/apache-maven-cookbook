@@ -101,12 +101,17 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.6.0</version>
       </plugin>
-      <!-- findbugs is no longer supported.  This needs to be updated -->
+      <!-- findbugs is no longer supported. Instead we will use spotbugs below -->
       <!-- <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
         <version>3.0.1</version>
       </plugin -->
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>4.8.6.6</version>
+      </plugin>
       <plugin>
         <groupId>org.codehaus.sonar-plugins</groupId>
         <artifactId>maven-report</artifactId>
@@ -141,6 +146,11 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>4.8.6.6</version>
       </plugin>
     </plugins>
   </build>
