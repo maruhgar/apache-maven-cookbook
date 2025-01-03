@@ -5,19 +5,20 @@
     xsi:schemaLocation="
         http://maven.apache.org/POM/4.0.0
         http://maven.apache.org/maven-v4_0_0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
 
+  <parent>
     <groupId>com.packt.cookbook</groupId>
+    <artifactId>cookbook-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
     <artifactId>multi-module-reporting</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
     <description>Multi-module reporting</description>
 
   <properties>
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <junit.version>4.13.2</junit.version>
-      <maven.compiler.release>8</maven.compiler.release>
+    <findsecbugs.plugin.version>1.13.0</findsecbugs.plugin.version>
   </properties>
 
   <dependencyManagement>
@@ -76,12 +77,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.8.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.11.2</version>
         <reportSets>
             <reportSet>
                 <id>aggregate</id>
@@ -96,7 +95,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
-        <version>3.6.0</version>
         <reportSets>
           <reportSet>
             <id>aggregate</id>
@@ -110,27 +108,22 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changelog-plugin</artifactId>
-        <version>2.3</version>
       </plugin>
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.12</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>3.5.2</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.26.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.6.0</version>
         <reportSets>
           <reportSet>
             <id>aggregate</id>
@@ -150,7 +143,6 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.8.6.6</version>
       </plugin>
     </plugins>
   </reporting>
@@ -159,7 +151,6 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.12</version>
         <executions>
             <execution>
             <id>default-prepare-agent</id>
@@ -172,21 +163,20 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.8.6.6</version>
           <configuration>
               <plugins>
                   <plugin>
                       <groupId>com.h3xstream.findsecbugs</groupId>
                       <artifactId>findsecbugs-plugin</artifactId>
-                      <version>1.13.0</version>
+                      <version>${findsecbugs.plugin.version}</version>
                   </plugin>
               </plugins>
           </configuration>
       </plugin>
       <!-- The below section is to run the bootstrap goal during package phase -->
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>3.21.0</version>
         <executions>
           <execution>
             <phase>package</phase>

@@ -2,22 +2,18 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.packt.cookbook</groupId>
+
+  <parent>
+    <groupId>com.packt.cookbook</groupId>
+    <artifactId>cookbook-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
   <artifactId>project-with-exec</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
   <name>Project to execute the jar created</name>
   <url>http://maven.apache.org</url>
-  <prerequisites>
-    <maven>2.2.1</maven>
-  </prerequisites>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>8</maven.compiler.release>
-    <junit.version>4.13.2</junit.version>
-    <slf4j.version>2.0.16</slf4j.version>
-    <logback.version>1.5.13</logback.version>
-  </properties>
+  
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -48,17 +44,15 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-clean-plugin</artifactId>
-        <version>3.4.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.13.0</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>${exec.maven.plugin.version}</version>
         <executions>
           <execution>
             <id>hello-world</id>
