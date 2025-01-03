@@ -15,8 +15,8 @@
   <name>Project with build number</name>
   <url>http://maven.apache.org</url>
   <scm>
-    <developerConnection>scm:git:https://bitbucket.org/maruhgar/apache-maven-cookbook</developerConnection>
-    <url>https://bitbucket.org/maruhgar/apache-maven-cookbook</url>
+    <developerConnection>scm:git:https://github.com/maruhgar/apache-maven-cookbook</developerConnection>
+    <url>https://github.com/maruhgar/apache-maven-cookbook</url>
   </scm>
 
   <dependencies>

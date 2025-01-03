@@ -35,12 +35,12 @@
 
   <issueManagement>
     <system>Bitbucket</system>
-    <url>https://bitbucket.org/maruhgar/apache-maven-cookbook</url>
+    <url>https://github.com/maruhgar/apache-maven-cookbook</url>
   </issueManagement>
 
   <scm>
-    <connection>scm:git:https://bitbucket.org/maruhgar/apache-maven-cookbook</connection>
-    <url>https://bitbucket.org/maruhgar/apache-maven-cookbook</url>
+    <connection>scm:git:https://github.com/maruhgar/apache-maven-cookbook</connection>
+    <url>https://github.com/maruhgar/apache-maven-cookbook</url>
   </scm>
 
   <properties>
