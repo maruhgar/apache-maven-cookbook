@@ -14,10 +14,6 @@
   <name>Project to execute the jar created</name>
   <url>http://maven.apache.org</url>
   
-  <prerequisites>
-    <maven>2.2.1</maven>
-  </prerequisites>
-
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
