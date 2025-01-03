@@ -14,6 +14,11 @@
   <name>Project with enforcer</name>
   <url>http://maven.apache.org</url>
 
+  <properties>
+    <maven.version>3.9.9</maven.version>
+    <java.version>17</java.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -37,10 +42,10 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>3.9.9</version>
+                  <version>${maven.version}</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>17</version>
+                  <version>${java.version}</version>
                 </requireJavaVersion>
               </rules>
             </configuration>
