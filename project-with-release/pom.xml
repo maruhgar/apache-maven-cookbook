@@ -23,7 +23,7 @@
     </dependency>
   </dependencies>
   <scm>
-    <developerConnection>scm:git:https://github.com/maruhgar/apache-maven-cookbook</developerConnection>
+    <connection>scm:git:https://github.com/maruhgar/apache-maven-cookbook</connection>
     <url>https://github.com/maruhgar/apache-maven-cookbook</url>
   </scm>
   <build>
