@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.1.0">
 
   <groupId>com.packt.cookbook</groupId>
   <artifactId>cookbook-parent</artifactId>
@@ -30,6 +28,7 @@
     <maven.compiler.release>8</maven.compiler.release>
     <maven.dependency.plugin.version>3.8.1</maven.dependency.plugin.version>
     <maven.enforcer.plugin.version>3.5.0</maven.enforcer.plugin.version>
+    <maven.install.plugin.version>4.0.0-beta-1</maven.install.plugin.version>
     <maven.jar.plugin.version>3.4.2</maven.jar.plugin.version>
     <maven.javadoc.plugin.version>3.11.2</maven.javadoc.plugin.version>
     <maven.jxr.plugin.version>3.6.0</maven.jxr.plugin.version>
@@ -53,51 +52,51 @@
     <tomcat7.maven.plugin.version>2.2</tomcat7.maven.plugin.version>
   </properties>
 
-  <modules>
-    <module>bootstrap-project</module>
-    <module>multi-module-reporting</module>
-    <module>non-standard-folder</module>
-    <module>project-with-additional-resources</module>
-    <module>project-with-additional-source</module>
-    <module>project-with-ant</module>
-    <module>project-with-aggregation</module>
-    <module>project-with-assembly</module>
-    <module>project-with-autoclean</module>
-    <module>project-with-build-number</module>
-    <module>project-with-clean-additional-folder</module>
-    <module>project-with-clean-disabled</module>
-    <module>project-with-dependencies</module>
-    <module>project-with-dependency-not-in-repo</module>
-    <module>project-with-deprecation</module>
-    <module>project-with-documentation</module>
-    <module>project-with-encoding</module>
-    <module>project-with-enforcer</module>
-    <module>project-with-exec</module>
-    <module>project-with-executable-jar</module>
-    <module>project-with-executable-webapp</module>
-    <module>project-with-include-exclude</module>
-    <module>project-with-inheritance</module>
-    <module>project-with-java-version</module>
-    <module>project-with-one-jar</module>
-    <module>project-with-profile</module>
-    <module>project-with-properties</module>
-    <module>project-with-release</module>
-    <module>project-with-resource-filtering</module>
-    <module>project-with-resources</module>
-    <module>project-with-side-by-side/parent</module>
-    <module>project-with-snapshot-dependencies</module>
-    <module>project-with-source-attached</module>
-    <module>project-with-test-jar</module>
-    <module>project-with-testNG</module>
-    <module>project-with-tests</module>
-    <module>project-with-tests-skipped</module>
-    <module>project-with-violations</module>
-    <module>simple-pom-project</module>
-    <module>simple-project</module>
-    <module>simple-multi-module</module>
-    <module>simple-webapp</module>
-    <module>two-multi-module</module>
-  </modules>
+  <subprojects>
+    <subproject>bootstrap-project</subproject>
+    <subproject>multi-subproject-reporting</subproject>
+    <subproject>non-standard-folder</subproject>
+    <subproject>project-with-additional-resources</subproject>
+    <subproject>project-with-additional-source</subproject>
+    <subproject>project-with-ant</subproject>
+    <subproject>project-with-aggregation</subproject>
+    <subproject>project-with-assembly</subproject>
+    <subproject>project-with-autoclean</subproject>
+    <subproject>project-with-build-number</subproject>
+    <subproject>project-with-clean-additional-folder</subproject>
+    <subproject>project-with-clean-disabled</subproject>
+    <subproject>project-with-dependencies</subproject>
+    <subproject>project-with-dependency-not-in-repo</subproject>
+    <subproject>project-with-deprecation</subproject>
+    <subproject>project-with-documentation</subproject>
+    <subproject>project-with-encoding</subproject>
+    <subproject>project-with-enforcer</subproject>
+    <subproject>project-with-exec</subproject>
+    <subproject>project-with-executable-jar</subproject>
+    <subproject>project-with-executable-webapp</subproject>
+    <subproject>project-with-include-exclude</subproject>
+    <subproject>project-with-inheritance</subproject>
+    <subproject>project-with-java-version</subproject>
+    <subproject>project-with-one-jar</subproject>
+    <subproject>project-with-profile</subproject>
+    <subproject>project-with-properties</subproject>
+    <subproject>project-with-release</subproject>
+    <subproject>project-with-resource-filtering</subproject>
+    <subproject>project-with-resources</subproject>
+    <subproject>project-with-side-by-side/parent</subproject>
+    <subproject>project-with-snapshot-dependencies</subproject>
+    <subproject>project-with-source-attached</subproject>
+    <subproject>project-with-test-jar</subproject>
+    <subproject>project-with-testNG</subproject>
+    <subproject>project-with-tests</subproject>
+    <subproject>project-with-tests-skipped</subproject>
+    <subproject>project-with-violations</subproject>
+    <subproject>simple-pom-project</subproject>
+    <subproject>simple-project</subproject>
+    <subproject>simple-multi-subproject</subproject>
+    <subproject>simple-webapp</subproject>
+    <subproject>two-multi-subproject</subproject>
+  </subprojects>
 
   <profiles>
     <profile>
@@ -105,9 +104,9 @@
       <activation>
         <activeByDefault>false</activeByDefault>
       </activation>
-      <modules>
-        <module>project-with-different-compiler</module>
-      </modules>
+      <subprojects>
+        <subproject>project-with-different-compiler</subproject>
+      </subprojects>
     </profile>
     <profile>
       <id>set-compiler-release</id>
@@ -157,6 +156,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
           <version>${maven.dependency.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>${maven.install.plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
