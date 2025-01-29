@@ -26,8 +26,6 @@ jobs:
       with:
         java-version: '21'
         maven-version: ${{ matrix.maven }}
-        distribution: 'oracle'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xmls
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
