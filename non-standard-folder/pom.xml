@@ -9,10 +9,9 @@
     <version>2.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>simple-project</artifactId>
+  <artifactId>non-standard-folder</artifactId>
   <packaging>jar</packaging>
-  <name>simple-project</name>
-  <url>http://maven.apache.org</url>
+  <name>non-standard-folder</name>
 
   <dependencies>
     <dependency>
@@ -26,7 +25,6 @@
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>src/test/java</testSourceDirectory>
-    <!-- <testOutputDirectory>target/test-classes</testOutputDirectory> -->
     <resources>
       <resource>
         <directory>src</directory>
@@ -40,11 +38,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <!-- Exclude test folders from compilation -->
+          <!-- Exclude test folders from source file compilation -->
           <excludes>
             <exclude>test/**</exclude>
           </excludes>
-          <release>11</release>
         </configuration>
       </plugin>
     </plugins>

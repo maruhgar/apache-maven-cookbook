@@ -56,6 +56,7 @@
   <modules>
     <module>bootstrap-project</module>
     <module>multi-module-reporting</module>
+    <module>non-standard-folder</module>
     <module>project-with-additional-resources</module>
     <module>project-with-additional-source</module>
     <module>project-with-ant</module>
