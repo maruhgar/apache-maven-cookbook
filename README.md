@@ -1,5 +1,7 @@
 _Note: This repo is mirrored from [bitbucket](https://bitbucket.org/maruhgar/apache-maven-cookbook) which is the original repo location._
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=maruhgar_apache-maven-cookbook&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=maruhgar_apache-maven-cookbook) | ![Build Status](https://github.com/maruhgar/apache-maven-cookbook/actions/workflows/maven-build.yml/badge.svg)
+
 # About
 
 This needs to be used in conjunction with the book [Apache Maven Cookbook](https://www.amazon.in/Apache-Maven-Cookbook-Raghuram-Bharathan/dp/1785286129).
