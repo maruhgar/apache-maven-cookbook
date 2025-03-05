@@ -2,7 +2,7 @@
 
   <parent/>
 
-  <artifactId>child</artifactId>
+  <artifactId>inherited-child</artifactId>
   <packaging>jar</packaging>
-  <name>Child Project</name>
+  <name>Inherited Child Project</name>
 </project>

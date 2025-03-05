@@ -3,7 +3,7 @@
   <parent>
       <groupId>com.packt.cookbook</groupId>
       <artifactId>side-parent</artifactId>
-      <relativePath>../parent</relativePath>
+      <!-- <relativePath>../parent</relativePath> -->
   </parent>
 
   <artifactId>side-child</artifactId>
