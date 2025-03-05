@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.1.0">
 
   <groupId>com.packt.cookbook</groupId>
@@ -54,7 +53,7 @@
 
   <subprojects>
     <subproject>bootstrap-project</subproject>
-    <subproject>multi-subproject-reporting</subproject>
+    <subproject>multi-module-reporting</subproject>
     <subproject>non-standard-folder</subproject>
     <subproject>project-with-additional-resources</subproject>
     <subproject>project-with-additional-source</subproject>
@@ -93,9 +92,9 @@
     <subproject>project-with-violations</subproject>
     <subproject>simple-pom-project</subproject>
     <subproject>simple-project</subproject>
-    <subproject>simple-multi-subproject</subproject>
+    <subproject>simple-multi-module</subproject>
     <subproject>simple-webapp</subproject>
-    <subproject>two-multi-subproject</subproject>
+    <subproject>two-multi-module</subproject>
   </subprojects>
 
   <profiles>
