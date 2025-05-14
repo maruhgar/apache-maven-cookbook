@@ -17,7 +17,7 @@
     <exec.maven.plugin.version>3.5.0</exec.maven.plugin.version>
     <jacoco.maven.plugin.version>0.8.12</jacoco.maven.plugin.version>
     <junit.version>4.13.2</junit.version>
-    <logback.version>1.5.13</logback.version>
+    <logback.version>1.5.18</logback.version>
     <maven.antrun.plugin.version>3.1.0</maven.antrun.plugin.version>
     <maven.assembly.plugin.version>3.7.1</maven.assembly.plugin.version>
     <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
@@ -46,7 +46,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <slf4j.version>2.0.16</slf4j.version>
     <spotbugs.maven.plugin.version>4.8.6.6</spotbugs.maven.plugin.version>
-    <testng.version>7.10.2</testng.version>
+    <testng.version>7.11.0</testng.version>
     <tomcat.version>8.0.14</tomcat.version>
     <tomcat7.maven.plugin.version>2.2</tomcat7.maven.plugin.version>
   </properties>
