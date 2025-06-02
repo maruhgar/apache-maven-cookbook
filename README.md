@@ -14,7 +14,7 @@ Coinciding with the tenth anniversary of the publication of the book, I have upd
 
 I have also ensured that the project works with the latest `3.x` version (`3.9.9`) as of date. 
 
-I have also verified that with the dependency updates, the same code will works with the upcoming maven-4 release, by verifying it with `4.0.0-rc-2` release.
+I have also verified that with the dependency updates, the same code will works with the upcoming maven-4 release, by verifying it with `4.0.0-rc-3` release.
 
 ## Pre-requisites
 
