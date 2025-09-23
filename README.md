@@ -12,7 +12,7 @@ All the examples are working examples.
 
 Coinciding with the tenth anniversary of the publication of the book, I have updated all the dependencies to the latest available as of date.  
 
-I have also ensured that the project works with the latest `3.x` version (`3.9.9`) as of date. 
+I have also ensured that the project works with the latest `3.x` version (`3.9.11`) as of date. 
 
 I have also verified that with the dependency updates, the same code will works with the upcoming maven-4 release, by verifying it with `4.0.0-rc-4` release.
 
