@@ -13,7 +13,7 @@
     <description>Multi-module reporting</description>
 
   <properties>
-    <findsecbugs.plugin.version>1.13.0</findsecbugs.plugin.version>
+    <findsecbugs.plugin.version>1.14.0</findsecbugs.plugin.version>
   </properties>
 
   <dependencyManagement>
