@@ -19,9 +19,9 @@ jobs:
       packages: write
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: Set up Maven
-      uses: s4u/setup-maven-action@v1.18.0
+      uses: s4u/setup-maven-action@v1.19.0
       with:
         java-version: '21'
         maven-version: '4.0.0-rc-4'
