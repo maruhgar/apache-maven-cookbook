@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        maven: [ '3.9.11', '4.0.0-rc-4' ]
+        maven: [ '3.9.11', '4.0.0-rc-5' ]
 
     name: Maven ${{ matrix.maven }} run
 
