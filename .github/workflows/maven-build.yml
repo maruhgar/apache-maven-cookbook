@@ -23,7 +23,7 @@ jobs:
     - name: Set up Maven
       uses: s4u/setup-maven-action@v1.19.0
       with:
-        java-version: '21'
+        java-version: '25'
         maven-version: '4.0.0-rc-5'
 
     - name: Build with Maven
