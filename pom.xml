@@ -50,7 +50,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <slf4j.version>2.0.17</slf4j.version>
     <spotbugs.maven.plugin.version>4.9.8.2</spotbugs.maven.plugin.version>
-    <testng.version>7.11.0</testng.version>
+    <testng.version>7.12.0</testng.version>
     <tomcat.version>8.0.14</tomcat.version>
     <tomcat7.maven.plugin.version>2.2</tomcat7.maven.plugin.version>
   </properties>
