@@ -21,7 +21,7 @@
     <findsecbugs.plugin.version>1.14.0</findsecbugs.plugin.version>
     <jacoco.maven.plugin.version>0.8.14</jacoco.maven.plugin.version>
     <junit.version>4.13.2</junit.version>
-    <logback.version>1.5.27</logback.version>
+    <logback.version>1.5.32</logback.version>
     <maven.antrun.plugin.version>3.2.0</maven.antrun.plugin.version>
     <maven.assembly.plugin.version>3.8.0</maven.assembly.plugin.version>
     <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
@@ -43,8 +43,8 @@
     <maven.scm.plugin.version>2.2.1</maven.scm.plugin.version>
     <maven.site.plugin.version>3.21.0</maven.site.plugin.version>
     <maven.source.plugin.version>3.4.0</maven.source.plugin.version>
-    <maven.surefire.plugin.version>3.5.4</maven.surefire.plugin.version>
-    <maven.surefire.report.plugin.version>3.5.4</maven.surefire.report.plugin.version>
+    <maven.surefire.plugin.version>3.5.5</maven.surefire.plugin.version>
+    <maven.surefire.report.plugin.version>3.5.5</maven.surefire.report.plugin.version>
     <maven.war.plugin.version>3.5.1</maven.war.plugin.version>
     <onejar.maven.plugin.version>1.4.4</onejar.maven.plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
