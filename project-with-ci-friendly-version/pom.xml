@@ -1,0 +1,12 @@
+<project xmlns="http://maven.apache.org/POM/4.1.0" root="true">
+
+  <groupId>com.packt.cookbook.examples</groupId>
+  <artifactId>project-with-ci-friendly-version</artifactId>
+  <version>${revision}</version>
+  <packaging>pom</packaging>
+  <name>Project with CI-friendly version</name>
+
+  <properties>
+    <revision>1.0.0-SNAPSHOT</revision>
+  </properties>
+</project>

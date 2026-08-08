@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.1.0">
+<project xmlns="http://maven.apache.org/POM/4.1.0" root="true">
 
   <groupId>com.packt.cookbook</groupId>
   <artifactId>cookbook-parent</artifactId>
@@ -75,6 +75,8 @@
     <subproject>project-with-executable-jar</subproject>
     <subproject>project-with-executable-webapp</subproject>
     <subproject>project-with-include-exclude</subproject>
+    <subproject>project-with-maven4-sources</subproject>
+    <subproject>project-with-bom</subproject>
     <subproject>project-with-inheritance</subproject>
     <subproject>project-with-java-version</subproject>
     <subproject>project-with-one-jar</subproject>

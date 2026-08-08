@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.1.0">
+
+  <parent/>
+
+  <artifactId>project-with-maven4-sources</artifactId>
+  <packaging>jar</packaging>
+  <name>Project with Maven 4 sources</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sources>
+      <source>
+        <scope>main</scope>
+        <directory>src/extra/java</directory>
+      </source>
+      <source>
+        <scope>test</scope>
+        <directory>src/extra/test</directory>
+      </source>
+    </sources>
+  </build>
+</project>

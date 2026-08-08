@@ -25,3 +25,16 @@ I have also verified that with the dependency updates, the same code will works 
 ## Running
 
 From the parent folder, run `mvn clean package` to clean and build all the submodules.
+
+## Maven 4 examples
+
+The `maven-4` branch also contains focused examples for Maven 4 features:
+
+* `project-with-maven4-sources` uses the native `<sources>` element for additional main and test source directories.
+* `project-with-ci-friendly-version` is a standalone project using a `${revision}` project version that can be overridden with `-Drevision=...`.
+* `project-with-bom` uses Maven 4's dedicated `bom` packaging for dependency management.
+
+Run the standalone version example from its directory, for example:
+
+	cd project-with-ci-friendly-version
+	mvn help:evaluate -Dexpression=project.version -Drevision=2.3.4 -DforceStdout
