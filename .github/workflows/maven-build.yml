@@ -18,16 +18,16 @@ jobs:
 
     strategy:
       matrix:
-        maven: [ '3.9.16', '4.0.0-rc-7' ]
+        maven: [ '3.10.0', '4.0.0-rc-7' ]
 
     name: Maven ${{ matrix.maven }} run
 
     steps:
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@v7.0.1
       with:
         persist-credentials: false
     - name: Set up Maven
-      uses: s4u/setup-maven-action@v1.20.0
+      uses: s4u/setup-maven-action@v1.21.0
       with:
         java-version: '25'
         maven-version: ${{ matrix.maven }}
